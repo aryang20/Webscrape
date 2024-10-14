@@ -2,6 +2,8 @@ import requests
 from bs4 import BeautifulSoup 
 import os
 from urllib.parse import urljoin
+from selenium import webdriver  
+from selenium.webdriver.common.keys import Keys
 
 
 
@@ -45,15 +47,23 @@ def down_and_find(based, saved_directoriesjawn):
      save_path = os.path.join(saved_directoriesjawn, image_name)
      download_images(full_url, save_path)
 
-     
 
+
+
+
+def page_jumper(bases1):
   
+    
+  #url_base = 'https://www.quarrylane.org/'
+
+  for page_num in range(1,4):
+    url = f"{bases1}{page_num}"
+    down_and_find(bases1, saved_director)
+
 
  
 
 
-
-down_and_find(url_base, saved_director)
-
+page_jumper(url_base)
 
 
