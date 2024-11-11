@@ -51,15 +51,17 @@ def down_and_find(based, saved_directoriesjawn):
 
 
 
-def page_jumper(bases1):
+
+def pagina_jumper():
+    pass
+
   
     
-  #url_base = 'https://www.quarrylane.org/'
-
+'''
   for page_num in range(1,4):
     url = f"{bases1}{page_num}"
     down_and_find(bases1, saved_director)
-
+'''
 
  
 
